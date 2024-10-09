@@ -14,43 +14,71 @@ DOMSelectors.button.addEventListener("click", function (event){
 
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
-   console.log(document.querySelector("input").value);
-   // 
-})
+    console.log(document.querySelector("input").value);
 
-const students = ["peter", "chris", "kim"];
-console.log(students[0]);
+});
 
-students.forEach((student) => console.log(student));
-const student = [{
-    name: "chris", 
-    age: 15, 
-    graduated: false,
-},
-{
-    name: "yifan", 
-    age: 18, 
-    graduated: false,
-},
-{
-    name: "peter", 
-    age: 16, 
-    graduated: false,
-},
-];
+const buttons = document.querySelectorAll("button");
 
-// student.forEach((student) => console.group(student.name));
+const newButtons = Array.from(buttons);
 
-const newArr = students.filter((student) => student.graduated === false);
-// !== equals not false 
-console.log(newArr);
+newButtons.forEach((button) => (button.style.backgroundColor = "blue")); 
 
-// another format 
-student 
-    .filter((student) => student.graduated === false) 
-    .forEach((student) => console.log(student.name));
+newButtons.forEach((button) => 
+    button.addEventListener("click", function(event) {
+        console.group(event.target.textContent)
+    }));
 
-// for loop is the following 
+
+let student = "blah blah the"
+DOMSelectors.container.insertAdjacentHTML("beforeend", `<div class = "card"> <h2 class = "card-header">${student}</h2></div>`);
+
+
+
+// create the HTML for inputs, card and container aka where the ards go 
+//select/query the HTML form and get values from in[uts 
+//turn values into object Movie, Game, User, whatevs 
+//insert card with object onto HTML 
+//add event listerner for remove button in JS 
+
+
+
+// const students = ["peter", "chris", "kim"];
+// console.log(students[0]);
+
+// students.forEach((student) => console.log(student));
+// const student = [{
+//     name: "chris", 
+//     age: 15, 
+//     graduated: false,
+// },
+// {
+//     name: "yifan", 
+//     age: 18, 
+//     graduated: false,ocument.querySelector("input").value);
+//    // 
+// })
+
+// },
+// {
+//     name: "peter", 
+//     age: 16, 
+//     graduated: false,
+// },
+// ];
+
+// // student.forEach((student) => console.group(student.name));
+
+// const newArr = students.filter((student) => student.graduated === false);
+// // !== equals not false 
+// console.log(newArr);
+
+// // another format 
+// student 
+//     .filter((student) => student.graduated === false) 
+//     .forEach((student) => console.log(student.name));
+
+// // for loop is the following 
 
 // for (let i = 0; i < 3; i++) {
 //     console.log(i);
