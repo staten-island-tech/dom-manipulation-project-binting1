@@ -1,15 +1,15 @@
 const DOMSelectors = {
     // header: document.querySelectorAll("h1"),
-    items: document.querySelectorAll("li"),
     card: document.querySelector(".card"),
     cardHeader: document.querySelector(".card-header"),
     button: document.querySelector(".btn"),
     form:document.querySelector(".form"),
+    container: document.querySelector(".container"),
 }
 
 DOMSelectors.button.addEventListener("click", function (event){
     console.log(event.target.parentElement);
-    event.target.parentElement.style.backgroundColor = "red";
+    event.target.parentElement.style.backgroundColor = "pink";
 })
 
 DOMSelectors.form.addEventListener("submit", function(event){
@@ -22,7 +22,7 @@ const buttons = document.querySelectorAll("button");
 
 const newButtons = Array.from(buttons);
 
-newButtons.forEach((button) => (button.style.backgroundColor = "blue")); 
+newButtons.forEach((button) => (button.style.backgroundColor = "lightblue")); 
 
 newButtons.forEach((button) => 
     button.addEventListener("click", function(event) {
@@ -30,7 +30,7 @@ newButtons.forEach((button) =>
     }));
 
 
-let student = "blah blah the"
+let student = "john"
 DOMSelectors.container.insertAdjacentHTML("beforeend", `<div class = "card"> <h2 class = "card-header">${student}</h2></div>`);
 
 
