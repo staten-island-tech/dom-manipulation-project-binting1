@@ -5,17 +5,21 @@ const DOMSelectors = {
     button: document.querySelector(".btn"),
     form:document.querySelector(".form"),
     container: document.querySelector(".container"),
+    image: document.querySelector(".img-link")
 }
 
 DOMSelectors.button.addEventListener("click", function (event){
     console.log(event.target.parentElement);
-    event.target.parentElement.style.backgroundColor = "pink";
+    event.target.parentElement.style.backgroundColor = "#E50914";
 })
 
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
     console.log(document.querySelector("input").value);
-
+    let name = document.querySelector(".name").value;
+    let imgLink = document.querySelector(".img-link").value;
+    DOMSelectors.container.insertAdjacentHTML("beforeend", `<div class = "card"> <h2 class = "card-header">${name}</h2></div>`);
+    DOMSelectors.container.insertAdjacentHTML("beforeend", `<div class = "card"> <img class = "img-link" src=${imgLink} alt="img"></img></div>`);
 });
 
 const buttons = document.querySelectorAll("button");
@@ -30,8 +34,6 @@ newButtons.forEach((button) =>
     }));
 
 
-let student = "john"
-DOMSelectors.container.insertAdjacentHTML("beforeend", `<div class = "card"> <h2 class = "card-header">${student}</h2></div>`);
 
 
 
