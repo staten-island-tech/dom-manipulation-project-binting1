@@ -5,7 +5,6 @@ const DOMSelectors = {
     button: document.querySelector(".btn"),
     form:document.querySelector(".form"),
     container: document.querySelector(".container"),
-    image: document.querySelector(".img-link")
 }
 
 DOMSelectors.button.addEventListener("click", function (event){
@@ -13,16 +12,20 @@ DOMSelectors.button.addEventListener("click", function (event){
     event.target.parentElement.style.backgroundColor = "#E50914";
 })
 
+
 DOMSelectors.form.addEventListener("submit", function(event){
     event.preventDefault();
+    const name = document.querySelector(".name").value;
+    const imgLink = document.querySelector(".img-link").value;
     console.log(document.querySelector("input").value);
-    let name = document.querySelector(".name").value;
-    let imgLink = document.querySelector(".img-link").value;
-    DOMSelectors.container.insertAdjacentHTML("beforeend", `<div class = "card"> <h2 class = "card-header">${name}</h2></div>`);
-    DOMSelectors.container.insertAdjacentHTML("beforeend", `<div class = "card"> <img class = "img-link" src=${imgLink} alt="img"></img></div>`);
-});
+    DOMSelectors.container.insertAdjacentHTML("beforeend", `
+        <div class = "container"> 
+        <h2 class = "card-header">${name}</h2>
+        <img class = "img-link" src=${imgLink} alt="img">`);
+    });
 
-const buttons = document.querySelectorAll("button");
+
+    const buttons = document.querySelectorAll("button");
 
 const newButtons = Array.from(buttons);
 
