@@ -25,15 +25,18 @@ DOMSelectors.form.addEventListener("submit", function(event){
     });
 
 
-    const buttons = document.querySelectorAll("button");
-
+const buttons = document.querySelectorAll("button");
 const newButtons = Array.from(buttons);
 
 newButtons.forEach((button) => (button.style.backgroundColor = "lightblue")); 
 
 newButtons.forEach((button) => 
     button.addEventListener("click", function(event) {
-        console.group(event.target.textContent)
+    console.group(event.target.textContent)
+    const remove = document.querySelector("#remove");
+    remove.addEventListener("click", () => {
+    document.location.remove();
+}); 
     }));
 
 
