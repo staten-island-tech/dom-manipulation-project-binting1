@@ -24,9 +24,11 @@ DOMSelectors.form.addEventListener("submit", function(event){
             <img src="${imgLink}" alt="teacher image" class="card-img"></img>
             <button class="delete" type="click">Delete</button>
         </div>`
-           clearField ()
-        remove ()
+        
     )
+    clearField ()
+        remove ()
+}
 
     function clearField () {
     DOMSelectors.name.value = ""
