@@ -25,14 +25,12 @@ DOMSelectors.form.addEventListener("submit", function(event){
             <button class="delete" type="click">Delete</button>
         </div>`
     )
-    removeCard ();
-
-});
-function removeCard () {
     DOMSelectors.name.value = ""
     DOMSelectors.subject.value =""
     DOMSelectors.imgLink.value = ""
-}
+
+});
+
 
 DOMSelectors.container.addEventListener("click", function(event) {
     if (event.target.classList.contains("delete")){
