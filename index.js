@@ -2,7 +2,7 @@ const DOMSelectors = {
     // header: document.querySelectorAll("h1"),
     card: document.querySelector(".card"),
     button: document.querySelector(".btn"),
-    form:document.querySelector(".form"),
+    form:document.querySelector(".formz"),
     container: document.querySelector(".container"),
     name: document.querySelector(".name"), 
     subject: document.querySelector(".subject"), 
