@@ -6,7 +6,7 @@ const DOMSelectors = {
     container: document.querySelector(".container"),
     name: document.querySelector(".name"), 
     subject: document.querySelector(".subject"), 
-    imgLink: document.querySelector(".img-link"), 
+    imgLink: document.querySelector(".img-link") 
 }
 
 DOMSelectors.form.addEventListener ("submit", function (event) { 
@@ -17,9 +17,9 @@ DOMSelectors.form.addEventListener ("submit", function (event) {
 function createCard (){ 
      DOMSelectors.container.insertAdjacentHTML("beforeend", 
     `<div class="card">
-            <h2 class="card-header">${name}</h2>
-            <h4 class="subject">${subject}</h4>
-            <img src="${imgLink}" alt="teacher image" class="card-img"></img>
+            <h2 class="card-header">${DOMSelectors.name.value}</h2>
+            <h4 class="subject">${DOMSelectors.subject.value}</h4>
+            <img src="${DOMSelectors.imgLink.value}" alt="teacher image" class="card-img"></img>
             <button class="delete" type="click">Delete</button>
         </div>`
         
