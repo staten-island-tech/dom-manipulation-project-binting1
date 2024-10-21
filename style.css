@@ -28,7 +28,6 @@ h1 {
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
 .card {
@@ -36,21 +35,11 @@ h1 {
     width: 30%; 
     border: 5px solid gold;
     border-radius:5px;
-    align-items: center;
 }
 
 .card-img {
     width: 50%; 
     height: 90%; 
     object-fit: cover; 
-    align-items: center;
-}
-
-.card-header {
-    align-items: center;
-}
-
-.subject {
-    align-items: center;
 }
 
