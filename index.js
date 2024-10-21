@@ -9,18 +9,13 @@ const DOMSelectors = {
     imgLink: document.querySelector(".img-link"), 
 }
 
-DOMSelectors.button.addEventListener("click", function (event){
-    console.log(event.target.parentElement);
-    event.target.parentElement.style.backgroundColor = "gold";
-})
+DOMSelectors.form.addEventListener ("submit", function (event) { 
+    event.preventDefault(); 
+    console.log (DOMSelectors.name.value, DOMSelectors.subject.value, DOMSelectors.imgLink.value)
 
-
-DOMSelectors.form.addEventListener("submit", function(event){
-    event.preventDefault();
-    const name = document.querySelector(".name").value;
-    const imgLink = document.querySelector(".img-link").value;
-    const subject = document.querySelector(".subject").value;
-    DOMSelectors.container.insertAdjacentHTML("beforeend", 
+    
+function createCard (){ 
+     DOMSelectors.container.insertAdjacentHTML("beforeend", 
     `<div class="card">
             <h2 class="card-header">${name}</h2>
             <h4 class="subject">${subject}</h4>
@@ -28,7 +23,7 @@ DOMSelectors.form.addEventListener("submit", function(event){
             <button class="delete" type="click">Delete</button>
         </div>`
         
-    )
+    )}
     clearField ()
         remove ()
 });
