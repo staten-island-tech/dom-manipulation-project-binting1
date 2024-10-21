@@ -26,17 +26,19 @@ DOMSelectors.form.addEventListener("submit", function(event){
             <button class="delete" type="click">Delete</button>
         </div>`
     )
-    removeInputs (); 
- 
+    clearFields ();
+    removeCard ();
+
 });
 
 
-function removeInputs () {
+function clearFields () {
     DOMSelectors.name.value = ""
     DOMSelectors.subject.value =""
     DOMSelectors.imgLink.value = ""
 }
 
+function removeCard () {
 DOMSelectors.container.addEventListener("click", function(event) {
     if (event.target.classList.contains("delete")){
         const card = event.target.parentElement; 
