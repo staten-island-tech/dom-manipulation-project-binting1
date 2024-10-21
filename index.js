@@ -29,13 +29,13 @@ DOMSelectors.form.addEventListener("submit", function(event){
     DOMSelectors.subject.value =""
     DOMSelectors.imgLink.value = ""
 
+    DOMSelectors.container.addEventListener("click", function(event) {
+        if (event.target.classList.contains("delete")){
+            const card = event.target.parentElement; 
+            card.remove();
+           
+        }
+        });
 });
 
 
-DOMSelectors.container.addEventListener("click", function(event) {
-    if (event.target.classList.contains("delete")){
-        const card = event.target.parentElement; 
-        card.remove();
-       
-    }
-    });
