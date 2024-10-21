@@ -1,23 +1,27 @@
 body, 
 html, 
 *{
+    font-size: 10px;
     box-sizing:border-box;
     margin: 0;
     padding:0;
 
 }
 
-.title {
+body {
     padding: 10px;
-    font-size: 20px;
     margin: 20px;
 }  
 
-.forms {
-    padding: 20px;
-    font-size: 20px;
-    margin: 20px;
-}  
+h1 {
+    font-size: 3rem;
+    font-family: "Playwrite";
+}
+
+.btn {
+    font-family: "Playwrite";
+    
+}
 
 .container{
     width: 100%;
@@ -26,7 +30,22 @@ html,
     justify-content: space-around;
 }
 
-.card{
+.card {
+    height: 70%; 
+    width: 30%; 
+    border: 5px solid gold;
+    border-radius:5px;
+}
+
+.card-img {
+    width: 50%; 
+    height: 90%; 
+    object-fit: cover; 
+}
+
+
+
+/* .card{
     width:30rem; 
     height:auto;
     margin:15px;
@@ -39,5 +58,5 @@ html,
     background-color:#deb887;
     box-sizing:border-box;
     
-}
+} */
 
