@@ -28,7 +28,7 @@ DOMSelectors.form.addEventListener("submit", function(event){
     )
     clearField ()
         remove ()
-}
+});
 
     function clearField () {
     DOMSelectors.name.value = ""
