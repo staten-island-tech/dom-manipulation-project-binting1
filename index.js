@@ -24,18 +24,20 @@ DOMSelectors.form.addEventListener("submit", function(event){
             <img src="${imgLink}" alt="teacher image" class="card-img"></img>
             <button class="delete" type="click">Delete</button>
         </div>`
+           clearField ()
+        remove ()
     )
+
+    function clearField () {
     DOMSelectors.name.value = ""
     DOMSelectors.subject.value =""
     DOMSelectors.imgLink.value = ""
+    }
 
-    DOMSelectors.container.addEventListener("click", function(event) {
-        if (event.target.classList.contains("delete")){
-            const card = event.target.parentElement; 
-            card.remove();
-           
-        }
-        });
-});
-
+    function remove () {
+    const button = document.querySelectorAll(".delete");
+            button.forEach((button) => 
+                button.addEventListener("click", function(button) {
+                    button.target.parentElement.remove()
+                }))};
 
