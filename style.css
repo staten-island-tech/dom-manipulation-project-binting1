@@ -24,22 +24,30 @@ h1 {
 }
 
 .container{
-    width: 100%;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: row; 
+    align-content: center;
 }
 
 .card {
-    height: 70%; 
-    width: 30%; 
+    height: 50%; 
+    width: 25%; 
     border: 5px solid gold;
     border-radius:5px;
+    background-color: pink; 
+    margin: 15px 1px;
+    box-shadow: black; 
+    
 }
 
 .card-img {
-    width: 50%; 
-    height: 90%; 
-    object-fit: cover; 
+    width: 90%; 
+    height: 30%; 
+    align-item: center; 
+    margin-left: 5%; 
+    
 }
+
 
