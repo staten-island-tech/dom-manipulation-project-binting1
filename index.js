@@ -17,8 +17,6 @@ DOMSelectors.form.addEventListener("submit", function(event){
     const name = document.querySelector(".name").value;
     const imgLink = document.querySelector(".img-link").value;
     const subject = document.querySelector(".subject").value;
-
-    function box () {
     DOMSelectors.container.insertAdjacentHTML("beforeend", 
     `<div class="card">
             <h2 class="card-header">${name}</h2>
@@ -27,17 +25,10 @@ DOMSelectors.form.addEventListener("submit", function(event){
             <button class="delete" type="click">Delete</button>
         </div>`
     )
-    clearFields ();
     removeCard ();
 
 });
 
-
-function clearFields () {
-    DOMSelectors.name.value = ""
-    DOMSelectors.subject.value =""
-    DOMSelectors.imgLink.value = ""
-}
 
 function removeCard () {
 DOMSelectors.container.addEventListener("click", function(event) {
