@@ -28,6 +28,7 @@ h1 {
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .card {
@@ -42,22 +43,14 @@ h1 {
     width: 50%; 
     height: 90%; 
     object-fit: cover; 
+    align-items: center;
 }
 
+.card-header {
+    align-items: center;
+}
 
-
-/* .card{
-    width:30rem; 
-    height:auto;
-    margin:15px;
-    border:2px;
-    border-radius:30px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:space-between;
-    background-color:#deb887;
-    box-sizing:border-box;
-    
-} */
+.subject {
+    align-items: center;
+}
 
