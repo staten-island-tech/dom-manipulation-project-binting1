@@ -24,7 +24,8 @@ function createCard (){
         </div>`
         
     )}
-   
+    clearField ()
+        remove ()
 });
 
     function clearField () {
