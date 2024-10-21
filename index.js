@@ -17,7 +17,8 @@ DOMSelectors.form.addEventListener("submit", function(event){
     const name = document.querySelector(".name").value;
     const imgLink = document.querySelector(".img-link").value;
     const subject = document.querySelector(".subject").value;
-    
+
+    function box () {
     DOMSelectors.container.insertAdjacentHTML("beforeend", 
     `<div class="card">
             <h2 class="card-header">${name}</h2>
