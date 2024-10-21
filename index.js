@@ -4,6 +4,9 @@ const DOMSelectors = {
     button: document.querySelector(".btn"),
     form:document.querySelector(".form"),
     container: document.querySelector(".container"),
+    name: document.querySelector(".name"), 
+    subject: document.querySelector(".subject"), 
+    imgLink: document.querySelector(".img-link"), 
 }
 
 DOMSelectors.button.addEventListener("click", function (event){
