@@ -28,9 +28,12 @@ DOMSelectors.form.addEventListener("submit", function(event){
     removeCard ();
 
 });
-
-
 function removeCard () {
+    DOMSelectors.name.value = ""
+    DOMSelectors.subject.value =""
+    DOMSelectors.imgLink.value = ""
+}
+
 DOMSelectors.container.addEventListener("click", function(event) {
     if (event.target.classList.contains("delete")){
         const card = event.target.parentElement; 
