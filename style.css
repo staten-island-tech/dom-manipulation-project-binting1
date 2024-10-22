@@ -18,8 +18,13 @@ h1 {
     font-family: "Playwrite";
 }
 
+
 .btn {
     font-family: "Playwrite";
+    background-color: gold;
+    color: grey;
+    padding: 5px;
+    text-align: center;
     
 }
 
@@ -31,23 +36,27 @@ h1 {
     align-content: center;
 }
 
+
 .card {
     height: 50%; 
     width: 25%; 
     border: 5px solid gold;
     border-radius:5px;
-    background-color: pink; 
-    margin: 15px 1px;
+    background-color:burlywood ; 
+    margin: 30px;
     box-shadow: black; 
-    
+    padding: 20px;
+    justify-content: space-between;
 }
 
 .card-img {
     width: 90%; 
     height: 30%; 
-    align-item: center; 
+    align-items: center; 
     margin-left: 5%; 
     
 }
 
-
+.delete {
+    align-items: center;
+}
